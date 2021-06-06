@@ -1,13 +1,18 @@
 import React ,{useEffect} from 'react';
 import '../css/service.css'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Services =()=>{
-   
+   useEffect(()=>{
+    Aos.init({
+        duration:1000
+    })
+   },[])
     return(
         <section id="service" className="service">
             <div className="container m-auto mt-5 pt-5">
-                <div className="row container text-center p-4 m-auto">
+                <div className="row container text-center p-4 m-auto mb-5">
                     <div className="col-md-4 " data-aos="fade-right">
                         <div className="card">
                             <div className="card-header">
@@ -25,7 +30,7 @@ const Services =()=>{
                         </div>
                         </div>
                     </div>
-                    <div className="col-md-4 ">
+                    <div className="col-md-4 " data-aos="fade-up">
                         <div className="card">
                             <div className="card-header">
                        <span className="info">
@@ -42,7 +47,7 @@ const Services =()=>{
                         </div>
                         </div>
                     </div>
-                    <div className="col-md-4 ">
+                    <div className="col-md-4 " data-aos="fade-left">
                         <div className="card">
                             <div className="card-header">
                        <span className="info">
@@ -62,15 +67,15 @@ const Services =()=>{
             </div>
 
             <div className="lang m-auto">
-                    <div className="conatainer m-auto p-4">
+                    <div className="conatainer m-auto p-lg-4">
                         <div className="images m-auto text-center">
-                        <img src="https://img.icons8.com/color/48/000000/html-5--v1.svg"/>
-                        <img src="https://img.icons8.com/color/48/000000/javascript.svg"/>
-                        <img src="https://img.icons8.com/color/48/000000/css3.svg"/>
-                        <img src="https://img.icons8.com/color/48/000000/sass.svg"/>
-                        <img src="https://img.icons8.com/plasticine/48/000000/react.svg"/>
-                        <img src="https://img.icons8.com/color/48/000000/angularjs.svg"/>
-                        <img src="https://img.icons8.com/color/48/000000/bootstrap.svg"/>
+                        <img src="https://img.icons8.com/color/48/000000/html-5--v1.svg" data-aos="fade-right"/>
+                        <img src="https://img.icons8.com/color/48/000000/javascript.svg" data-aos="fade-down"/>
+                        <img src="https://img.icons8.com/color/48/000000/css3.svg" data-aos="fade-up"/>
+                        <img src="https://img.icons8.com/color/48/000000/sass.svg" data-aos="fade-left"/>
+                        <img src="https://img.icons8.com/plasticine/48/000000/react.svg"data-aos="fade-up"/>
+                        <img src="https://img.icons8.com/color/48/000000/angularjs.svg"data-aos="fade-down"/>
+                        <img src="https://img.icons8.com/color/48/000000/bootstrap.svg" data-aos="fade-left"/>
 
                     </div>
                     </div>

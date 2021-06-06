@@ -17,11 +17,10 @@ $orange:rgb(224, 64, 15);
   
 }
 .lang{
-
-    background: black;
     color: white;
     padding: 2rem;
     display: flex;
+    overflow-y: hidden !important;
         img{
             width: 10rem;
             margin: 0 auto;

@@ -14,13 +14,13 @@ const Navbar=()=>{
     },[]);
     return(
         <nav className="navbar fixed-top">
-            <a className="navbar-brand"> 
+            <a href="#home" className="navbar-brand"> 
              Frontend<span>Soldier</span></a>
             <ul className="navbar-nav">
-                <li className="nav-item"><a href="" className="nav-link">Home</a></li>
-                <li className="nav-item"><a href="" className="nav-link">Service</a></li>
-                <li className="nav-item"><a href="" className="nav-link">About</a></li>
-                <li className="nav-item"><a href="" className="nav-link">Contact</a></li>
+                <li className="nav-item"><a href="#home" className="nav-link">Home</a></li>
+                <li className="nav-item"><a href="#service" className="nav-link">Service</a></li>
+                <li className="nav-item"><a href="#about" className="nav-link">About</a></li>
+                <li className="nav-item"><a href="#contact" className="nav-link">Contact</a></li>
             </ul>
             <span className="icon">
                 <i className="fa fa-th-large"></i>

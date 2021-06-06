@@ -1,0 +1,28 @@
+$orange:rgb(224, 64, 15);
+.contact{
+    background:black ;
+    margin-top: 6rem;
+    display: flex;
+    h1{
+        font-weight: 900;
+        color: #f4f4f4;
+        padding: 3rem;
+    }
+    .container {
+        span{
+            font-size: 3rem;
+            color: $orange;
+        }
+        p{
+            font-size: 1.2rem;
+            color: white;
+        }
+        .btn{
+            background: $orange;
+            width: 25%;
+            color: white;
+            text-decoration: none;
+            margin: 0 auto;
+        }
+    }
+}

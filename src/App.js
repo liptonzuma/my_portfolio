@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import Home from "./components/Home";
 import Services from "./components/Services";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
      <Navbar />
       <Home/>
       <Services/>
+      <About/>
+      <Contact/>
     </div>
   );
 }

@@ -12,12 +12,12 @@
 }
 
 .lang {
-  background: black;
   color: white;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-y: hidden !important;
 }
 
 .lang img {
