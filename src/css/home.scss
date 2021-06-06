@@ -13,4 +13,31 @@ header {
         color: white;
         text-align: center;
     }
+    .buttons{
+        display:block;
+        
+        .btn-1{
+            background: $orange;
+            color: white;
+        margin-right:1rem;
+
+        }
+        .btn-cta{
+            border: 2px solid $orange;
+            color: rgb(240, 105, 56);
+        }
+    }
+    .home-row{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .image-fluid{
+        max-width: 100%;
+    }
+    .intro{
+        color:silver
+    }
+}
+@media(max-width:990px) {
+  
 }

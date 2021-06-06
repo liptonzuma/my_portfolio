@@ -1,27 +1,57 @@
 import React ,{useEffect} from 'react';
+import {gsap} from 'gsap';
+
 import '../css/home.css'
 
 const Home =()=>{
+    useEffect(()=>{
+        gsap.from('.image-fluid',{
+            opacity:0,
+            width:0,
+            duration:1
+            
+        })
+        gsap.from('.name',{
+            opacity:0,
+            y:-100,
+            duration:2,
+        })
+        gsap.from('.intro',{
+            opacity:0,
+            y:100,
+            duration:2,
+            delay:2,
+        })
+        gsap.from('.buttons',{
+            opacity:0,
+            duration:2,
+            delay:2,
+        })
+    },[])
     return(
+        <>
         <header id="home "  className="pt-5  mt-2 home">
             <div className="container m-auto">
-                <div className="row">
-                    <div className="col-md-7 pt-5 mt-5">
-                        <p className="p-5 msg col-lg-4 col-xs-8 mx-3">
-                        <span >Hello, I am</span>
-
-                        </p>
-                    <h1 className="display-5 name">
+                <div className="row home-row">
+                    <div className="col-md-7 pt-md-5 mt-md-5">
+                    <h1 className="display-5 name pt-md-5 mt-md-5">
                          Solomon Boateng Gyan
                     </h1>
-                    <span className="lead">I am a Frontend Developer. I love javascript.</span>
+                    <span className="lead intro">I am a Frontend Developer. I build responsive websites with javascript</span>
+                    <div className="buttons pt-3">
+                    <a href="" className="btn btn-1">Read more</a>
+                    <a href="" className="btn btn-cta">Hire me</a>
+                </div>
                     </div>
                     <div className="col-md-5">
-                        <img src="" alt="" />
+                        <img src="https://www.clipartmax.com/png/full/258-2585462_%C2%A0-web-responsive-clipart.png" alt="banner" className="image-fluid image-reponsive mt-5 pt-5"/>
                     </div>
                 </div>
+             
             </div>
+            
         </header>
+        </>
     )
 }
 

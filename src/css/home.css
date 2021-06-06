@@ -15,4 +15,35 @@ header .msg {
   color: white;
   text-align: center;
 }
+
+header .buttons {
+  display: block;
+}
+
+header .buttons .btn-1 {
+  background: #e0400f;
+  color: white;
+  margin-right: 1rem;
+}
+
+header .buttons .btn-cta {
+  border: 2px solid #e0400f;
+  color: #f06938;
+}
+
+header .home-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+header .image-fluid {
+  max-width: 100%;
+}
+
+header .intro {
+  color: silver;
+}
 /*# sourceMappingURL=home.css.map */
