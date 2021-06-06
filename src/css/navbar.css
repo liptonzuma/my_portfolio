@@ -1,0 +1,120 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding-left: 5rem;
+}
+
+.navbar-brand span {
+  color: #e0400f;
+}
+
+.navbar-brand:hover {
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  background-color: black;
+  position: relative;
+  z-index: 10000;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53) !important;
+  transition: 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53) !important;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  width: 8rem;
+  text-align: center;
+  -webkit-transition: 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav .nav-item:hover {
+  color: white;
+  background-color: #e0400f;
+}
+
+.icon {
+  color: white;
+  font-size: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 925px) {
+  .navbar-brand {
+    padding-left: 1rem;
+    position: relative;
+    z-index: 1000;
+  }
+  .icon {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+  .navbar-nav {
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background: black;
+    -webkit-clip-path: circle(9.1% at 100% 0);
+            clip-path: circle(9.1% at 100% 0);
+  }
+  .navbar-nav .nav-item {
+    padding: 2rem 2rem 1rem 0rem;
+  }
+  .navbar-nav .nav-item:hover {
+    background: none;
+  }
+  .navbar-nav .nav-item:hover .nav-link {
+    color: #e0400f;
+  }
+  .navbar-nav .nav-item:first-child {
+    padding: 4rem 2rem 1rem 0rem;
+  }
+  .drop {
+    top: 4;
+    -webkit-clip-path: circle(141.2% at 100% 0);
+            clip-path: circle(141.2% at 100% 0);
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

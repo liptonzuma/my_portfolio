@@ -1,0 +1,16 @@
+$orange:rgb(224, 64, 15);
+
+header {
+    background: black !important;
+    color: white;
+    height: 100vh;
+    .name{
+        font-weight: 1000;
+    }
+    .msg{
+        clip-path: polygon(0 24%, 100% 23%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        background: $orange;
+        color: white;
+        text-align: center;
+    }
+}

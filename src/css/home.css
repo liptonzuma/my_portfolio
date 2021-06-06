@@ -1,0 +1,18 @@
+header {
+  background: black !important;
+  color: white;
+  height: 100vh;
+}
+
+header .name {
+  font-weight: 1000;
+}
+
+header .msg {
+  -webkit-clip-path: polygon(0 24%, 100% 23%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0 24%, 100% 23%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  background: #e0400f;
+  color: white;
+  text-align: center;
+}
+/*# sourceMappingURL=home.css.map */
